@@ -1,0 +1,15 @@
+app-header{
+  height: 110px;
+}
+app-nav{
+  position: absolute;
+  top: 120px;
+  float: left;
+}
+app-content{
+  position: absolute;
+  top: 150px;
+  left:250px;
+  float: left;
+}
+
