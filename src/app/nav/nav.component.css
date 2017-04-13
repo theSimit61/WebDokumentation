@@ -1,0 +1,14 @@
+ul{
+  padding-top: 25px;
+  left:0px;
+  list-style: none;
+  color:black;
+  border: 3px solid white;
+
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 12pt;
+
+}
+div{
+  weight:120px;
+}
