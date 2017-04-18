@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppComponent} from "../app.component";
 
 @Component({
   selector: 'app-titel',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitelComponent implements OnInit {
 
-  constructor() { }
+  constructor(private content: AppComponent) {}
+
+  getData=this.content.docs;
+
+
+
+
 
   ngOnInit() {
   }

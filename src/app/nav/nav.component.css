@@ -9,6 +9,9 @@ ul{
   font-size: 12pt;
 
 }
+li{
+  max-width: 200px;
+}
 div{
   weight:120px;
 }

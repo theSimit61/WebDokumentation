@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppComponent} from "../app.component";
 
 @Component({
   selector: 'app-nav',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private content: AppComponent) {}
 
+  getCap=this.content.docs;
+
+  check(id){
+    this.content.docs.nr=id-1;
+  }
   ngOnInit() {
   }
 

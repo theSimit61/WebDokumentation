@@ -1,15 +1,7 @@
 <div>
       <ul>
-        <li><a href="#">Inhaltsverzeichnis</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 1</a></li>
+        <li *ngFor="let item of getCap.dokumente">
+          <a href="#"(mouseup)="check(item.titelID)">{{item.titelID}} {{item.contentTitel}}</a>
+        </li>
       </ul>
 </div>

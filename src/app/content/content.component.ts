@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppComponent} from "../app.component";
 
 @Component({
   selector: 'app-content',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private content: AppComponent) {}
 
+  getData=this.content.docs;
   ngOnInit() {
   }
 
